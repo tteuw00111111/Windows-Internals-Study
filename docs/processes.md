@@ -73,7 +73,7 @@ This is a unreal POC, meaning it's not safe since it hardcodes the username and 
 	);
 ```
 
-**Full demo code**: [create_process_as_user.cpp](../pocs/process-creation/create-process-as-user.cpp
+**Full demo code**: [create_process_as_user.cpp](../pocs/process-creation/create-process-as-user.cpp)
 
 Using Windows Credential UI:
 ```cpp
