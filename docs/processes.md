@@ -187,7 +187,7 @@ VOID HideProcess(PEPROCESS Process)
 }
 ```
 
-**Full demo code**: [process_hider_kernel.cpp](pocs/process-creation/process_hider_kernel.cpp)
+**Full demo code**: [process_hider_kernel.cpp](../pocs/process-creation/process_hider_kernel.cpp)
 
 
 #### Identifiers & Metadata
