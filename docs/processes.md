@@ -94,7 +94,7 @@ bool PromptForCredentials(
     BOOL save = FALSE;
     DWORD flags = CREDUI_FLAGS_DO_NOT_PERSIST | CREDUI_FLAGS_EXCLUDE_CERTIFICATES;
 ```
-**Full demo code:** pocs/process-creation/cred_launch.cpp
+**Full demo code**: [create-process-as-user-wincredui.cpp](../pocs/process-creation/create-process-as-user-wincredui.cpp)
 
 
 
