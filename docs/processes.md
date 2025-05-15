@@ -100,9 +100,13 @@ bool PromptForCredentials(
 
 ### Shell Shortcut: ShellExecute[Ex]
 If you hand a document like ("``report.docx``"), it:
+
 Look up which app handles ".docx" in the registry (word)
+
 Builds a proper command line("winword.exe" "report.docx")
+
 Call **CreateProcess** for you.
+
 Works like asking "Open this file for me", rather than "Run this program"
 
 #### POC ShellExecuteW & ShellExecuteExW
