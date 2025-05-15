@@ -37,8 +37,10 @@ BOOL ok = CreateProcessW(
 
 #### Be Someone Else
 Sometimes you want to launch a process as a different user(like run a schedule task or install a software). Windows give you two flavors in ``advapi32.dll``
+
 What is a "``token handle``"?
 Windows processes run "as" some security token, a kernel object that says "Im Alice, i belong to group X, i have these privileges...". A token handle is just an opaque handle, that points at one of those token objects.
+
 
 | Function                | What it does                                       | Caller Requirements                                                                     |
 | ----------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------- |
@@ -48,7 +50,9 @@ Windows processes run "as" some security token, a kernel object that says "Im Al
 
 #### POC CreateProcessAsUser
 “Obtain a token via ``LogonUser``, then spawn via ``CreateProcessAsUser``.”
+
 https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessasusera
+
 https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-createprocesswithlogonw
 
 This is a unreal POC, meaning it's not safe since it hardcodes the username and password. But there is also a version that i use Windows Credential UI that most tools uses and is safe.
@@ -69,7 +73,7 @@ This is a unreal POC, meaning it's not safe since it hardcodes the username and 
 	);
 ```
 
-**Full demo code:** pocs/process-creation/CreateProcessAsUser.cpp
+**Full demo code**: [create_process_as_user.cpp](../pocs/process-creation/create-process-as-user.cpp
 
 Using Windows Credential UI:
 ```cpp
