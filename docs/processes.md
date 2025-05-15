@@ -32,7 +32,7 @@ BOOL ok = CreateProcessW(
 );
 ```
 
-**Full demo code:** pocs/process-creation/create_process.cpp
+**Full demo code**: [create_process.cpp](../pocs/process-creation/create_process.cpp)
 
 #### Be Someone Else
 Sometimes you want to launch a process as a different user(like run a schedule task or install a software). Windows give you two flavors in ``advapi32.dll``
