@@ -112,7 +112,7 @@ Works like asking "Open this file for me", rather than "Run this program"
 #### POC ShellExecuteW & ShellExecuteExW
 1) Creates a dummy text file (if it doesn’t already exist).
 2) Opens it with the user’s default “.txt” handler via ShellExecuteW.
-3) Opens it again via ShellExecuteExW so we can grab the PROCESS_INFORMATION for fun (PID, wait, etc.).
+3) Opens it again via ShellExecuteExW to grab the PROCESS_INFORMATION for fun (PID, wait, etc.).
    
 ```cpp
   HINSTANCE hInst = ShellExecuteW(
@@ -126,7 +126,7 @@ Works like asking "Open this file for me", rather than "Run this program"
 
 ```
 
-**Full demo code:** pocs/process-creation/shell_poc.cpp
+**Full demo code**: [shell_poc.cpp](../pocs/process-creation/shell_poc.cpp)
 
 ### Kitchen
 No matter which API is used, when it's time to actually spin up the new process, it all funnels into:
